@@ -1,0 +1,41 @@
+//Marlon Mueller-Soppart
+//20200408
+
+//script contains DIALOGUE and ANSWERS
+//type::id::prev::next
+
+DIALOGUE::0::0::[1]::Narrator::Thanks for pressing enter. Are you ready for a massize and fun math adventure? (press enter again)
+#--- //represents depth (to keep track of things)
+
+DIALOGUE::1::0::[2,3,4]::Narrator::Oh you don't know how to respond? We will take care of that for you. Here are some preselected answers below. Press up and down keys to see them.
+
+#---
+
+ANSWER::2::1::[5]::Math is so fun!
+ANSWER::3::1::[6]::Math is too much fun!
+ANSWER::4::1::[7]::Math is fun! Fun is BuildingUp!
+
+
+#---
+
+DIALOGUE::5::2::[8]::Narrator::Nicely done! I see promise in you.
+DIALOGUE::6::3::[8]::Narrator::Woah that's in impossible!
+DIALOGUE::7::4::[8]::Narrator::You are correct.
+
+#---
+
+DIALOGUE::8::5::[9]::Narrator::Write your name in the text box below.
+
+#---
+
+ANSWER::9::8::[10]::Write your name here
+
+#---
+
+UPDATE_NAME::10::9::[11]
+
+#---
+
+DIALOGUE::11::9::[11]::Narrator::DONE
+
+//... and so on ...

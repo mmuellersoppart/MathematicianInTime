@@ -1,0 +1,21 @@
+//Marlon Mueller-Soppart
+//20200223
+
+//script contains just DIALOGUE (and no multiple next lines)
+//type::id::prev::next
+
+DIALOGUE::0::0::1::Boat Man 1::Ahar matey how goes it?
+
+#--- //represents depth (to keep track of things)
+
+DIALOGUE::1::0::2::Boat Man 2::Nothing goes around here. No wind. Say who are you?
+
+#---
+
+ANSWER::2::1::3::Leave me alone!
+
+#---
+
+DIALOGUE::3::2::3::Boat Man 2::We weren't even talking to you.
+
+//... and so on ...

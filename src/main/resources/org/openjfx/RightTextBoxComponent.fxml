@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<VBox prefHeight="1068.0" prefWidth="300.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >-->
+<!--    <children>-->
+<!--        <HBox prefHeight="100.0" prefWidth="200.0">-->
+<!--            <children>-->
+<!--                <ImageView fx:id="characterImgV" fitHeight="219.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                    <viewport>-->
+<!--                        <Rectangle2D />-->
+<!--                    </viewport>-->
+<!--                    <HBox.margin>-->
+<!--                        <Insets bottom="10.0" left="40.0" right="40.0" top="30.0" />-->
+<!--                    </HBox.margin>-->
+<!--                </ImageView>-->
+<!--            </children>-->
+<!--        </HBox>-->
+<!--    </children>-->
+<!--</VBox>-->
+
+<fx:root prefHeight="1818" prefWidth="300" type="javafx.scene.layout.VBox"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox>
+            <TextArea fx:id="topTextBox" prefHeight="400.0" prefWidth="300.0" wrapText="true" editable="false"
+                      mouseTransparent="true" focusTraversable="false">
+                <HBox.margin>
+                    <Insets top="40.0"/>
+                </HBox.margin>
+            </TextArea>
+        </HBox>
+
+        <HBox>
+            <TextArea fx:id="bottomTextBox" prefHeight="400.0" prefWidth="300.0" wrapText="true" focusTraversable="true">
+                <prefHeight>400.0</prefHeight>
+            </TextArea>
+        </HBox>
+
+    </children>
+</fx:root>

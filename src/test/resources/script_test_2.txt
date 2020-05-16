@@ -1,0 +1,24 @@
+//Marlon Mueller-Soppart
+//20200223
+
+//script contains DIALOGUE and ANSWERS
+//type::id::prev::next
+//NO SPACES IN LISTS
+
+DIALOGUE::0::0::[1]::Boat Man 1::Ahar matey how goes it?
+
+#--- //represents depth (to keep track of things)
+
+DIALOGUE::1::0::[2,3,4]::Boat Man 2::Nothing goes around here. Not even wind. Say who are you?
+
+#---
+
+ANSWER::2::1::[5]::Leave me alone!
+ANSWER::3::1::[5]::Are you guys pirates?
+ANSWER::4::1::[5]::Check out my favorite number __.
+
+#---
+
+DIALOGUE::5::3::[5]::Boat Man 2::We weren't even talking to you.
+
+//... and so on ...

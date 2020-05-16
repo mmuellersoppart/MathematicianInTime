@@ -1,0 +1,13 @@
+/*
+Marlon Mueller-Soppart
+20200313
+ob- for the main page (possible a css to be applied across all windows
+ */
+
+
+
+.centerAction {
+    -fx-background-image: url("Art/Main/Art/NavBar/Elements/NavigationLayout.png");
+}
+
+

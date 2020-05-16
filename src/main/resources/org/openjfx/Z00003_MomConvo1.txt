@@ -1,0 +1,31 @@
+//Marlon Mueller-Soppart
+//20200418
+
+//type::id::prev::next
+
+DIALOGUE::0::0::[1,2]::Narrator::You get to your room and your mom is there. She asks what has just happened to you.
+
+#--- //represents depth (to keep track of things)
+
+ANSWER::1::0::3::Tell her what has transpired.
+ANSWER::2::0::4::Tell her that you are exhausted and want to sleep.
+
+#---
+
+DIALOGUE::3::1::5::Narrator::Your mom listens intently to what you say. Unfortunately, you are really bad with words. As soon as you got the orbs, she was lost. Soon after she left.
+DIALOGUE::4::2::6::Mom::That's totally understandable given how you changed into a different person.
+
+#---
+
+DAMAGE::5::3::[7]::Awkward::5::You are embarrassed for yourself and spend the next 30 minutes thinking about what you could've said.
+DAMAGE::6::4::[7]::Mental::5::You realize that you are truly alone in the world.
+
+#---
+
+DIALOGUE::7::8::[7]::Narrator::...Explore your room and sleep.
+
+#---
+
+
+#---
+

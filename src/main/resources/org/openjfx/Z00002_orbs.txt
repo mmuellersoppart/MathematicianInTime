@@ -1,0 +1,67 @@
+//Marlon Mueller-Soppart
+//20200408
+
+//script contains DIALOGUE and ANSWERS
+//type::id::prev::next
+
+DIALOGUE::0::0::[1,2,3,4,5,6]::Narrator::Alright. Let's do something trivial. Pick your favorite orb.
+
+#--- //represents depth (to keep track of things)
+
+ANSWER::1::0::[7]::calm orb
+ANSWER::2::0::[8]::grey orb
+ANSWER::3::0::[9]::multicolored orb
+ANSWER::4::0::[10]::dark orb
+ANSWER::5::0::[11]::big shiny orb
+ANSWER::6::0::[12]::no orb for me!
+
+#---
+
+DIALOGUE::7::2::[13,14]::Narrator::If you get close enough, you can hear the sound of the ocean. Would you like to pick this one?
+DIALOGUE::8::2::[15,16]::Narrator::It's the most boring shade of grey, but it emits an intense nervous energy. It might even be shaking. Would you like to pick this one?
+DIALOGUE::9::2::[17,18]::Narrator::Tons of brilliant colors are bursting through (trust us) and each new color compliments the next. Would you like to pick this one? It's amazing.
+DIALOGUE::10::2::[19,20]::Narrator::You walk towards the dark orb. Each step you take it gets smaller and smaller and darker and darker. Would you like to pick this one?
+DIALOGUE::11::2::[21,22]::Narrator::This is the biggest, shiny-est, silvery-est, and all around greatest orb you've ever seen. Admittedly, it makes the other orbs look pathetic. However, it must be noted, the orb emits a weird force that pushes all matter away. Would you like to pick this one?
+DIALOGUE::12::2::[23,24]::Narrator::This game will not be fun if you don't play along.
+
+#---
+
+#calm orb
+ANSWER::13::7::[27]::Take the calm orb.
+ANSWER::14::7::[26]::I would like to pick another.
+
+ANSWER::15::7::[27]::Take the grey orb.
+ANSWER::16::7::[26]::I would like to pick another.
+
+ANSWER::17::7::[27]::Take the multicolored orb.
+ANSWER::18::7::[16]::I would like to pick another.
+
+ANSWER::19::7::[27]::Take the knowledge that there was in fact an orb that existed and then disappeared.
+ANSWER::20::7::[16]::I would like to pick another.
+
+ANSWER::21::7::[27]::Take the big shiny orb.
+ANSWER::22::7::[16]::I would like to pick another.
+
+ANSWER::23::12::[27]::Let me try again! I am sorry. I am here for fun!
+ANSWER::24::12::[16]::I refuse to play along!
+
+#---
+
+DIALOGUE::25::13::[28]::Narrator::Nothing
+
+DIALOGUE::26::13::[1,2,3,4,5,6]::Narrator::Which orb do you dig?
+UPDATE_CHARACTERTYPE::27::13::[28]
+
+#---
+
+DIALOGUE::28::27::[29]::Narrator::You've transformed into a majestic incredible mathematician who will change the world. Go home and tell your mom!
+
+#---
+
+ANSWER::29::28::[30]::Okay
+
+#---
+
+DIALOGUE::30::16::[30]::Narrator::DONE
+
+//... and so on ...

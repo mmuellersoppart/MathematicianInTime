@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainBPain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: f1f1f1;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Z99999_Home_Controller">
+
+
+<!--    This is custom per scene. -->
+    <center>
+        <HBox alignment="CENTER" layoutX="1000.0" layoutY="1000.0" style="-fx-fill: purple" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <children>
+                        <StackPane fx:id="centerAction">
+                            <children>
+                                <Pane prefHeight="720.0" prefWidth="1280.0">
+                                    <children>
+
+                                        <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@0100_EmptyRoom.png" />
+                                            </image>
+                                        </ImageView>
+                              <Button fx:id="chairButton" layoutX="970.0" layoutY="340.0" mnemonicParsing="false">
+                                 <graphic>
+                                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@0100_Chair.png" />
+                                                  </image>
+                                              </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="bedButton" graphicTextGap="0.0" layoutX="115.0" layoutY="188.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                              <ImageView layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@0100_Bed.png" />
+                                                  </image>
+                                              </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="chestButton" layoutX="520.0" layoutY="188.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                              <ImageView pickOnBounds="true" preserveRatio="true">
+                                                  <image>
+                                                      <Image url="@0100_Chest.png" />
+                                                  </image>
+                                              </ImageView>
+                                 </graphic>
+                              </Button>
+                                        <ImageView layoutX="870.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@0100_Desk.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView layoutX="920.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@0100_Painting.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </StackPane>
+                    </children>
+                </VBox>
+            </children> <!-- vbox child-->
+        </HBox>
+    </center>
+
+<!-- Always filled with player profile -->
+    <left>
+    </left>
+
+
+<!--    Always filled with top component. -->
+    <top>
+    </top>
+
+<!--    Always filled with right component. -->
+    <right>
+    </right>
+
+</BorderPane>

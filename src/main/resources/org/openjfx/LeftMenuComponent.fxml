@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<!--<VBox prefHeight="1068.0" prefWidth="300.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >-->
+<!--    <children>-->
+<!--        <HBox prefHeight="100.0" prefWidth="200.0">-->
+<!--            <children>-->
+<!--                <ImageView fx:id="characterImgV" fitHeight="219.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                    <viewport>-->
+<!--                        <Rectangle2D />-->
+<!--                    </viewport>-->
+<!--                    <HBox.margin>-->
+<!--                        <Insets bottom="10.0" left="40.0" right="40.0" top="30.0" />-->
+<!--                    </HBox.margin>-->
+<!--                </ImageView>-->
+<!--            </children>-->
+<!--        </HBox>-->
+<!--    </children>-->
+<!--</VBox>-->
+
+<fx:root prefHeight="1818" prefWidth="300" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+                <children>
+                    <ImageView fx:id="playerPortrait" fitHeight="219.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+
+                        <image>
+                            <Image url="@0000_Default.png" />
+                        </image>
+
+                        <HBox.margin>
+                            <Insets bottom="30.0" left="80.0" right="50.0" top="20.0" />
+                        </HBox.margin>
+                    </ImageView>
+                </children>
+            </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label fx:id="userName" alignment="TOP_LEFT" contentDisplay="CENTER" prefWidth="300.0" style="-fx-alignment: center;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label fx:id="playerTitle" alignment="TOP_LEFT" contentDisplay="CENTER" prefWidth="300.0" style="-fx-alignment: center;">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label fx:id="healthTitle" alignment="TOP_LEFT" prefWidth="300.0" text="Health">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox>
+         <children>
+            <Line fx:id="healthBar" endX="200.0" stroke="RED" style="-fx-stroke-width: 5;" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label fx:id="progressTitle" alignment="TOP_LEFT" prefWidth="300.0" text="Progress">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Line fx:id="progressBar" stroke="#0059ff" style="-fx-stroke-width: 5;" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label fx:id="moneyTitle" alignment="TOP_LEFT" prefWidth="300.0" text="Money">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Line fx:id="moneyBar" endX="1.0" stroke="#00d72f" style="-fx-stroke-width: 5;" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Pane prefHeight="40.0" />
+      <HBox>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Label fx:id="resistanceToRealityTitle" text="Resistance to reality">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="resistanceToReality" text="0">
+               <HBox.margin>
+                  <Insets left="24.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="handEyeCoordinationTitle" text="Hand eye coordination">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="handEyeCoordination" text="0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="workingMemoryTitle" text="Working memory">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="workingMemory" text="0">
+               <HBox.margin>
+                  <Insets left="39.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="seeTheUnseenTitle" text="See the unseen">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="seeTheUnseen" text="0">
+               <HBox.margin>
+                  <Insets left="49.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="canArticulateTitle" text="Can articulate">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="canArticulate" text="0">
+               <HBox.margin>
+                  <Insets left="57.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="egoTitle" text="Ego">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <Label fx:id="ego" text="0">
+               <HBox.margin>
+                  <Insets left="111.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+        </children>
+</fx:root>
